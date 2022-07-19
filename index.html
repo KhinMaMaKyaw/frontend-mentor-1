@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" type="images/png" href="./images/favicon-32x32.png">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white position-fixed w-100" id="header">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="" height="30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list mobile-menu-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                <ul class="navbar-nav me-auto my-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Feature
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">
+                                <img src="./images/icon-todo.svg" alt="">
+                                Todo List
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <img src="./images/icon-calendar.svg" alt="">
+                                Calendar
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <img src="./images/icon-reminders.svg" alt="">
+                                Remainders
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <img src="./images/icon-planning.svg" alt="">
+                                Planning
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">History</a></li>
+                          <li><a class="dropdown-item" href="#">Our Team</a></li>
+                          <li><a class="dropdown-item" href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled px-3" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled px-3" href="#">About</a>
+                </li>
+                </ul>
+                <div class="d-flex flex-column flex-lg-row" role="search">
+                    <a href="#" class="btn me-3 text-secondary">Login</a>
+                    <a href="#" class="btn btn-outline-primary text-secondary px-3">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row d-flex min-vh-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-xl-5 d-lg-none d-block mb-5">
+                <img src="./images/image-hero-mobile.png" class="w-100" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center text-lg-start">
+                        <h1 class="display-2 fw-bold mx-1 mb-4">Make remote work</h1>
+                    <p class="mb-5 mt-4 w-75 mx-auto mx-lg-0 mt-md-0"> Get your team in sync, no matter your location. Streamline processes, 
+                        create team rituals, and watch productivity soar.
+                    </p>
+                    <a href="#" class="btn btn-primary mb-5">Learn more</a>
+                    <div class="row mt-4 flex-nowrap">
+                        <div class="col">
+                            <img src="images/client-databiz.svg" height="25px" alt="">
+                        </div>                   
+                        <div class="col">
+                            <img src="images/client-audiophile.svg" height="25px" alt="">
+                        </div>                    
+                        <div class="col">
+                            <img src="images/client-meet.svg" height="25px" alt="">   
+                        </div>                    
+                        <div class="col">
+                            <img src="images/client-maker.svg" height="25px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-6  d-lg-block d-none">
+                <img src="./images/image-hero-desktop.png" class="w-100" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

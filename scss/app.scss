@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;700&display=swap');
+
+$primary : hsl(0, 0%, 8%);
+$secondary : hsl(0, 0%, 41%);
+
+$font-family-sans-serif : 'Epilogue', sans-serif; 
+
+
+$navbar-nav-link-padding-x : 1.5rem;
+/* $navbar-padding-y : 0.7rem; */
+$nav-link-color : $secondary;
+
+$btn-border-radius: 0.7rem;
+$btn-border-width : 2px;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+body{
+    font-size: 18px;
+
+    p{
+        color: $secondary;
+    }
+}
+
+@media screen and (max-width:992px) {
+    
+    #header{
+        .mobile-menu-icon{
+            font-size: 2rem;
+        }
+        .nav-link{
+            border: 1px solid $secondary;
+            border-radius: 0.7rem;
+            margin-bottom: 0.5rem;
+            padding-left: 15px;
+    
+        } 
+        ul.dropdown-menu.show{
+            border: 1px solid $secondary;
+            border-radius: 0.7rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            
+        }      
+    } 
+}
